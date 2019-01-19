@@ -18,3 +18,7 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
 
  * 属性可以不用全设置
  * view在设置drawable时候，必须要执行`setLayerType(View.LAYER_TYPE_SOFTWARE, null)`,因为硬件加速的问题
+ 
+ ## 示例
+ 
+ ![阴影示例](https://github.com/cuibg/Pictures/blob/master/TIM%E5%9B%BE%E7%89%8720190120014339.jpg)
