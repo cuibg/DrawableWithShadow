@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
         View viewTwo = findViewById(R.id.view_two);
         View viewThree = findViewById(R.id.view_three);
 
+        int[] colors1 = new int[] {DRAWABLE_BG_COLOR,Color.parseColor("#6495ED")};
+
         DrawableWithShadow buildOne = new DrawableWithShadow.Builder()
-                .setDrawableBgColor(DRAWABLE_BG_COLOR)
                 .setShadowColor(SHADOW_COLOR)
+                .setLinearGradientConfig(new LinearGradientConfig(colors1, LinearGradientConfig.LinearGradientOriention.VERTICAL))
                 .setDx(5)
                 .setDy(10).build();
         viewOne.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
