@@ -22,4 +22,4 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
  
  ## 示例
  
- ![阴影示例](https://github.com/cuibg/Pictures/blob/master/TIM%E5%9B%BE%E7%89%8720190120014339.jpg)
+ ![阴影示例](./demo.jpg)
