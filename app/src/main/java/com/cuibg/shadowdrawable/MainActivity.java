@@ -3,12 +3,13 @@ package com.cuibg.shadowdrawable;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.cuibg.drawablewithshadow.DrawableWithShadow;
 import com.cuibg.drawablewithshadow.LinearGradientConfig;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
 
 public class MainActivity extends AppCompatActivity {
 
