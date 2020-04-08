@@ -1,5 +1,5 @@
 # DrawableWithShadow
-一个可以实现阴影的drawable
+一个可以实现阴影的drawable，兼容AndroidX
 
 ## 使用方法
 
