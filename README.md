@@ -19,6 +19,7 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
  * 属性可以不用全设置。
  * 如果设置了LinearGradientConfig，那么DrawableBgColor将无效。
  * view在设置drawable时候，必须要执行`setLayerType(View.LAYER_TYPE_SOFTWARE, null)`,因为硬件加速的问题。
+ * 这种方式的缺点是drawable占用位置的大小，需要提前预留出来大小
  
  ## 示例
  
