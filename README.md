@@ -3,7 +3,13 @@
 
 ## 使用方法
 
-1. java
+1. 注意
+  * 属性可以不用全设置。
+  * 如果设置了LinearGradientConfig，那么DrawableBgColor将无效。
+  * view在设置drawable时候，必须要执行`setLayerType(View.LAYER_TYPE_SOFTWARE, null)`,因为硬件加速的问题。
+  * 这种方式的缺点是drawable占用位置的大小，需要提前预留出来大小
+
+2. java
 
 ```
 DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
@@ -17,13 +23,8 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
         viewThree.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         ViewCompat.setBackground(viewThree, buildThree);
 ```
-
- * 属性可以不用全设置。
- * 如果设置了LinearGradientConfig，那么DrawableBgColor将无效。
- * view在设置drawable时候，必须要执行`setLayerType(View.LAYER_TYPE_SOFTWARE, null)`,因为硬件加速的问题。
- * 这种方式的缺点是drawable占用位置的大小，需要提前预留出来大小
  
- 2. kotlin
+3. kotlin
  
  ```
   val buildOne = DrawableWithShadow.Builder()
@@ -34,6 +35,8 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
         viewThree.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
         ViewCompat.setBackground(viewThree, buildOne)
  ```
+
+
  ## 示例
  
  ![阴影示例](./demo.jpg)
