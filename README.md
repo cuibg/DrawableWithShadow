@@ -3,6 +3,8 @@
 
 ## 使用方法
 
+1. java
+
 ```
 DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
                 .setShadowRadius(20)
@@ -21,6 +23,17 @@ DrawableWithShadow buildThree = new DrawableWithShadow.Builder()
  * view在设置drawable时候，必须要执行`setLayerType(View.LAYER_TYPE_SOFTWARE, null)`,因为硬件加速的问题。
  * 这种方式的缺点是drawable占用位置的大小，需要提前预留出来大小
  
+ 2. kotlin
+ 
+ ```
+  val buildOne = DrawableWithShadow.Builder()
+                .setShadowColor(SHADOW_COLOR)
+                .setLinearGradientConfig(LinearGradientConfig(colors1, LinearGradientConfig.LinearGradientOriention.VERTICAL))
+                .setDx(5)
+                .setDy(10).build()
+        viewThree.setLayerType(View.LAYER_TYPE_SOFTWARE, null)
+        ViewCompat.setBackground(viewThree, buildOne)
+ ```
  ## 示例
  
  ![阴影示例](./demo.jpg)
